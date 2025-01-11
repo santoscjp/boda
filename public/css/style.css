@@ -1,6 +1,6 @@
 :root {
   --color-principal: #fdfaf5;
-  --color-secundario: #112d66;
+  --color-secundario: #03213e;
   --color-terciario: #9b5227;
   --font-principal: "Ibarra Real Nova", serif;
   --font-secundaria: "Ibarra Real Nova", serif;
@@ -427,4 +427,48 @@ footer img {
   color: var(--color-secundario);
   font-size: 45px;
   font-weight: bold;
+}
+.separador {
+  background-color: var(--color-secundario);
+  padding: 50px 30px 50px 30px;
+  border-width: 2px 2px 2px 2px;
+  border-color: #b4a180;
+  border-style: double;
+}
+
+.line {
+  font-size: 1.2em;
+  text-align: center;
+  line-height: 1.5em;
+  color: var(--color-principal);
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-block-end: 20px;
+  max-width: 500px;
+  margin: 0px 25px 0px 25px;
+}
+.contenedor-uno {
+  padding: 50px 15px 50px 15px;
+}
+
+.contenedor-uno .contenido {
+  border-style: double;
+  border-width: 2px 2px 2px 2px;
+  border-color: #b4a180;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  margin: 0px 0px 0px 0px;
+  --e-column-margin-right: 0px;
+  --e-column-margin-left: 0px;
+  padding: 40px 30px 40px 30px;
+}
+
+.contenedor-uno .contenido h2 {
+  font-family: var(--font-principal);
+  font-size: 20px;
+  line-height: 1.2em;
+  letter-spacing: 0px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color-secundario);
+  text-align: center;
 }
