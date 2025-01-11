@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const envelope = document.getElementById("envelope");
   const content = document.getElementById("content");
 
-  const isEnvelopeOpened = localStorage.getItem("envelopeOpened1");
+  const isEnvelopeOpened = localStorage.getItem("envelopeOpened");
 
   if (isEnvelopeOpened) {
     envelopeContainer.style.display = "none";
@@ -44,8 +44,8 @@ document.addEventListener("DOMContentLoaded", function () {
         envelopeContainer.style.display = "none";
         content.style.display = "block";
         content.classList.add("show-content");
-        //localStorage.setItem("envelopeOpened", "true");
-      }, 2000);
+        localStorage.setItem("envelopeOpened", "true");
+      }, 1500);
     });
   }
 });

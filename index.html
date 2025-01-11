@@ -13,17 +13,16 @@
     <link rel="stylesheet" href="./public/css/bootstrap-icons.css" />
   </head>
 
+  <div id="envelope-container">
+    <img
+      id="envelope"
+      class="envelope-image"
+      src="./public/images/icono-sobre.png"
+      height="5280"
+      width="2970"
+    />
+  </div>
   <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
-    <div id="envelope-container">
-      <img
-        id="envelope"
-        class="envelope-image"
-        src="./public/images/icono-sobre.png"
-        height="5280"
-        width="2970"
-      />
-    </div>
-
     <div id="content" style="display: none">
       <header>
         <div class="novios">
@@ -57,12 +56,27 @@
         <p data-aos="fade-in" class="aos-init aos-animate">
           Te esperamos para celebrar nuestra boda
         </p>
-        <img
+        <!-- <img
           data-aos="fade-in"
           class="fecha aos-init aos-animate"
           src="fecha.png"
           alt=""
-        />
+        /> -->
+        <div
+          class="date-container"
+          data-aos="fade-in"
+          class="fecha aos-init aos-animate"
+        >
+          <div class="date-section">
+            <span class="date-text">SÁBADO</span>
+          </div>
+          <div>
+            <span class="date-number">22</span>
+          </div>
+          <div class="date-section">
+            <span class="date-text">FEBRERO</span>
+          </div>
+        </div>
         <div class="information">
           <div
             data-aos="fade-up"
