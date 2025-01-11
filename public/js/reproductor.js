@@ -1,9 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
   const audio = document.getElementById("myAudio");
-  audio.play().catch((error) => {
-    console.log(
-      "Reproducción automática bloqueada. Esperando interacción del usuario."
-    );
+  document.addEventListener("click", function enableAudio() {
+    audio.play().catch((error) => {
+      console.log(
+        "Reproducción automática bloqueada. Esperando interacción del usuario."
+      );
+      console.log(error);
+    });
+    document.removeEventListener("click", enableAudio);
   });
 
   const playPauseBtn = document.getElementById("playPauseBtn");
