@@ -110,7 +110,7 @@ header {
   font-weight: 400;
 }
 
-.etiqueta {
+.etiqueta-horas {
   font-size: 1.3em;
   font-family: var(--font-principal);
 }
@@ -632,4 +632,27 @@ footer img {
 
 .step:last-child .circle::after {
   content: none;
+}
+
+.contenedor-cinco {
+  padding: 50px 15px 50px 15px;
+}
+
+.contenedor-cinco img {
+  display: block;
+  margin: 0 auto;
+  max-width: 50%;
+  height: auto;
+}
+.contenedor-cinco span {
+  color: var(--color-secundario);
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 0 40px;
+  margin: 10px 0 20px 0;
+}
+
+.contenedor-cinco h5 {
+  color: var(--color-secundario);
+  margin: 0;
 }
