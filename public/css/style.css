@@ -527,6 +527,7 @@ footer img {
 .contenedor-cuatro {
   padding: 50px 15px 50px 15px;
 }
+
 /* ----------------------------- 
    TIMELINE
 ----------------------------- */
@@ -539,19 +540,19 @@ footer img {
 #line-back,
 #line-progress {
   position: absolute;
-  left: 34px;
+  left: 24px;
   width: 4px;
   border-radius: 2px;
 }
 
 #line-back {
-  top: 0;
-  bottom: 0; /* para que ocupe todo el contenedor #timeline */
+  top: 90px;
+  bottom: 0;
   background-color: #f1ede7;
 }
 
 #line-progress {
-  top: 0;
+  top: 90px;
   bottom: 0;
   background-color: var(--color-secundario);
   height: 0px;
@@ -559,8 +560,10 @@ footer img {
 }
 
 .step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 150px;
   position: relative;
-  margin: 100px 0;
 }
 
 .circle {
@@ -568,21 +571,51 @@ footer img {
   height: 50px;
   border-radius: 50%;
   background: #ccc; /* color inicial gris */
-  position: absolute;
-  left: 10px;
-  top: 0;
-  transform: translateY(-50%);
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
   font-size: 18px;
-  transition: background 0.3s;
+  margin-right: 20px;
+  position: relative;
+  flex-shrink: 0;
 }
+
+.circle::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 120px;
+  background: #ccc;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
 .info {
-  padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
-.info h2 {
+
+.hora {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  display: inline-block;
+  color: #f1ede7;
+}
+
+.etiqueta {
+  font-size: 30px;
+  margin: 0 !important;
+  color: #f1ede7;
+}
+
+.info img {
+  display: block;
+  width: 100px;
+  height: auto;
+  max-width: 100%;
 }
 
 .circle.active {
@@ -591,4 +624,12 @@ footer img {
 
 .info.active h2 {
   color: var(--color-secundario);
+}
+
+.info.active .hora {
+  color: var(--color-secundario);
+}
+
+.step:last-child .circle::after {
+  content: none;
 }
