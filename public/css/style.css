@@ -472,9 +472,11 @@ footer img {
   color: var(--color-secundario);
   text-align: center;
 }
+
 .contenedor-dos {
   margin: 80px 0 130px 0;
 }
+
 .contenedor-dos p {
   width: auto;
   color: var(--color-secundario);
@@ -482,4 +484,106 @@ footer img {
   text-align: center;
   padding: 0 70px;
   margin: 0;
+}
+
+.contenedor-tres {
+  padding: 50px 15px 50px 15px;
+  gap: 20px;
+}
+
+.contenedor-tres .contenido {
+  border-style: double;
+  border-width: 2px 2px 2px 2px;
+  border-color: #b4a180;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 1.3rem;
+  padding-bottom: 25px;
+}
+
+.contenedor-tres .contenido h3 {
+  text-align: center;
+}
+
+.contenedor-tres .contenido p {
+  width: auto;
+  color: var(--color-secundario);
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 0 40px;
+  margin: 10px 0 20px 0;
+}
+
+.img-fluid {
+  width: 100% !important;
+  height: auto !important;
+}
+/* ----------------------------- 
+   TIMELINE
+----------------------------- */
+#timeline {
+  position: relative;
+  width: 100%;
+  max-width: 290px;
+}
+
+#line-back,
+#line-progress {
+  position: absolute;
+  left: 34px;
+  width: 4px;
+  border-radius: 2px;
+}
+
+#line-back {
+  top: 0;
+  bottom: 0; /* para que ocupe todo el contenedor #timeline */
+  background-color: #f1ede7;
+}
+
+#line-progress {
+  top: 0;
+  bottom: 0;
+  background-color: var(--color-secundario);
+  height: 0px;
+  transform-origin: top;
+}
+
+.step {
+  position: relative;
+  margin: 100px 0;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #ccc; /* color inicial gris */
+  position: absolute;
+  left: 10px;
+  top: 0;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+.info {
+  padding-left: 80px;
+}
+.info h2 {
+}
+
+.circle.active {
+  background: var(--color-secundario) !important;
+}
+
+.info.active h2 {
+  color: var(--color-secundario);
 }
