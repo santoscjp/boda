@@ -492,9 +492,9 @@ footer img {
 }
 
 .contenedor-tres .contenido {
-  border-style: double;
+  /* border-style: double;
   border-width: 2px 2px 2px 2px;
-  border-color: #b4a180;
+  border-color: #b4a180; */
   height: auto;
   display: flex;
   flex-wrap: wrap;
@@ -521,6 +521,11 @@ footer img {
 .img-fluid {
   width: 100% !important;
   height: auto !important;
+  border-radius: 5px;
+}
+
+.contenedor-cuatro {
+  padding: 50px 15px 50px 15px;
 }
 /* ----------------------------- 
    TIMELINE
