@@ -378,9 +378,9 @@ footer img {
     padding: 0px 0 20px 0;
     color: var(--color-terciario);
   }
-  .information-bloque p {
-    max-width: 260px;
-  }
+  /* .information-bloque p {
+     max-width: 260px;
+  } */
   .timing {
     display: flex;
     align-items: center;
