@@ -362,7 +362,7 @@ footer img {
 @media (max-width: 600px) {
   header {
     background-size: cover;
-    background-image: url(../images/fondo-principal.png);
+    background-image: url(../images/fondo-principal.webp);
     background-attachment: unset;
     text-align: center;
   }
@@ -526,6 +526,11 @@ footer img {
 
 .contenedor-cuatro {
   padding: 50px 15px 0px 15px;
+  background-image: url(../images/fondo-dorado.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
 }
 
 /* ----------------------------- 
@@ -546,13 +551,13 @@ footer img {
 }
 
 #line-back {
-  top: 90px;
+  top: 120px;
   bottom: 0;
   background-color: #f1ede7;
 }
 
 #line-progress {
-  top: 90px;
+  top: 120px;
   bottom: 0;
   background-color: var(--color-secundario);
   height: 0px;
@@ -570,7 +575,7 @@ footer img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #ccc; /* color inicial gris */
+  background: #f1ede7; /* color inicial gris */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -587,7 +592,7 @@ footer img {
   left: 50%;
   top: 50%;
   height: 120px;
-  background: #ccc;
+  background: #f1ede7;
   transform: translateX(-50%);
   z-index: -1;
 }
@@ -613,7 +618,6 @@ footer img {
 
 .info img {
   display: block;
-  width: 100px;
   height: auto;
   max-width: 100%;
 }
