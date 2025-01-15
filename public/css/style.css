@@ -10,7 +10,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   background-color: var(--color-principal);
   padding: 0;
   margin: 0;
@@ -59,20 +59,19 @@ body h2 {
   padding: 0;
 }
 header {
-  width: 100%;
-  background-image: url(./img-editables/desktop2.png);
-  background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 100vh;
+  background-image: url(../images/fondo-principal.webp);
+  background-attachment: unset;
+  text-align: center;
+  max-width: 500px;
 }
 .novios {
-  width: 100%;
+  display: none;
+  /* width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
 .novios img {
   width: 100%;
