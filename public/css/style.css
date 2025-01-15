@@ -71,7 +71,9 @@ header {
   background-image: url(../images/fondo-principal.webp);
   background-attachment: unset;
   text-align: center;
+  height: 100vh;
 }
+
 .novios img {
   width: 100%;
   animation-name: texto;
