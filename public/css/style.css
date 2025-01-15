@@ -7,6 +7,9 @@
 }
 
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
   background-color: var(--color-principal);
   padding: 0;
